@@ -29,7 +29,7 @@ echo "{\n\t\"draw\": {$draw},\n\t\"recordsTotal\": {$_i_qt},\n\t\"recordsFiltere
 if($h_i > 0) {
     while($row = $history->fetch_assoc()) {
         $h_i--;
-    echo "\n\t\t{\"_id\": \"{$row['polling_unit_number']}\", \"_name\": \"{$row['polling_unit_name']}\", \"_desc\": \"{$row['polling_unit_description']}; ?>\"}" .($h_i > 0 ? ',' : '');
+    echo "\n\t\t{\"_id\": \"{$row['polling_unit_number']}\", \"_name\": \"{$row['polling_unit_name']}\", \"_desc\": \"{$row['polling_unit_description']}\"}" .($h_i > 0 ? ',' : '');
     }
 }
 echo "\n\t]\n}";
