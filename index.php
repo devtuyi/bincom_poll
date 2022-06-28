@@ -1,4 +1,5 @@
 <?php
+require("req/mysqli.php");
 include("inc/header.html");
 ?>
 <div class="form-row">
@@ -32,3 +33,4 @@ include("inc/header.html");
 <?php
 include("inc/footer.html");
 ?>
+<script src="./js/main.js"></script>
