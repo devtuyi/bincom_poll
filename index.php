@@ -1,11 +1,5 @@
 <?php
-require("req/mysqli.php");
 include("inc/header.html");
-$lga = _int("lga");
-$unit = _int("unit");
-$ward = _int("ward");
-$lgas = $cnx->query("SELECT * FROM `lga`");
-$wards = $cnx->query("SELECT * FROM `ward` WHERE `lga_id`='{$lga}'");
 ?>
 <div class="form-row">
     <form method="get" action="" class="form-inline">
@@ -37,5 +31,4 @@ $wards = $cnx->query("SELECT * FROM `ward` WHERE `lga_id`='{$lga}'");
 </div>
 <?php
 include("inc/footer.html");
-$cnx->close();
 ?>
